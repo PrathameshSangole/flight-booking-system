@@ -1,12 +1,18 @@
 fastapi==0.110.0
 uvicorn[standard]==0.27.0
+
 sqlalchemy==2.0.25
 pymysql==1.1.0
-python-multipart==0.0.9
+
 pydantic==2.6.1
-reportlab==4.0.9
-Jinja2==3.1.3
+python-multipart==0.0.9
 python-dotenv==1.0.0
 
-# Optional for improved performance or logging
+passlib[bcrypt]==1.7.4
+bcrypt==4.1.2
+
+reportlab==4.0.9
+Jinja2==3.1.3
+
+# Optional logging
 loguru==0.7.2
