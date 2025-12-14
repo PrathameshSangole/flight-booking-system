@@ -168,11 +168,11 @@ cd backend
 python -m venv venv
 venv\Scripts\activate    # Windows
 
-# Install dependencies:
+#### Install dependencies:
 
 pip install -r requirements.txt
 
-# Create .env file using .env.example:
+#### Create .env file using .env.example:
 
 DB_USER=root
 DB_PASSWORD=your_mysql_password
@@ -180,11 +180,11 @@ DB_HOST=localhost
 DB_PORT=3306
 DB_NAME=flight_booking_db
 
-# Run backend server:
+#### Run backend server:
 
 uvicorn app.main:app --reload --port 8000
 
-# Backend runs at:
+#### Backend runs at:
 
 http://127.0.0.1:8000
 
@@ -194,7 +194,7 @@ cd frontend
 npm install
 npm run dev
 
-# Frontend runs at:
+#### Frontend runs at:
 
 http://localhost:5173
 
@@ -208,5 +208,5 @@ POST	/users/login
 POST	/users/register
 
 ### 👤 Author
-# Prathamesh Sangole
-# CSE (Artificial Intelligence)
+####  Prathamesh Sangole
+####  CSE (Artificial Intelligence)
