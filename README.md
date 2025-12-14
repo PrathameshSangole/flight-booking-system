@@ -171,23 +171,23 @@ venv\Scripts\activate    # Windows
 
 - Install dependencies:
 
-pip install -r requirements.txt
+  pip install -r requirements.txt
 
 - Create .env file using .env.example:
 
-DB_USER=root
-DB_PASSWORD=your_mysql_password
-DB_HOST=localhost
-DB_PORT=3306
-DB_NAME=flight_booking_db
+  DB_USER=root
+  DB_PASSWORD=your_mysql_password
+  DB_HOST=localhost
+  DB_PORT=3306
+  DB_NAME=flight_booking_db
 
 - Run backend server:
 
-uvicorn app.main:app --reload --port 8000
+  uvicorn app.main:app --reload --port 8000
 
 - Backend runs at:
-- 
-http://127.0.0.1:8000
+
+  http://127.0.0.1:8000
 
 
 ### 3️⃣ Frontend Setup
@@ -198,7 +198,7 @@ npm run dev
 
 - Frontend runs at:
 
-http://localhost:5173
+  http://localhost:5173
 
 ### 📄 API Endpoints (Sample)
 Method	Endpoint
@@ -211,4 +211,5 @@ POST	/users/register
 
 ### 👤 Author
 - Prathamesh Sangole
-B.Tech. CSE (Artificial Intelligence)
+ B.Tech.
+ CSE (Artificial Intelligence)
