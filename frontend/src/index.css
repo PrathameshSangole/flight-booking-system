@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Ensure Tailwind CSS is included */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom global transitions */
+* {
+  transition: all 0.15s ease-out;
+}
+
+/* Hide scrollbar for a cleaner UI */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #b4b4b4;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* debug / small animations for smoothness */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-slideUp {
+  animation: slideUp 280ms ease-out both;
+}
+
+/* card shadow tuning */
+.shadow-card {
+  box-shadow: 0 6px 18px rgba(20, 23, 39, 0.06);
+}
+
+/* color tokens (if you don't already have them) */
+:root {
+  --primary: #0f72f6;
+  --secondary: #0b4ca3;
+}
+.text-primary { color: var(--primary); }
+.bg-primary { background-color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+
+
+/* landing page utilities / tokens */
+:root {
+  --primary: #0f72f6;
+  --primary-dark: #0b4ca3;
+  --accent-start: #0f72f6;
+  --accent-end: #0b4ca3;
+}
+.text-primary { color: var(--primary); }
+.bg-primary { background-color: var(--primary); }
+.text-secondary { color: var(--primary-dark); }
+
+.shadow-card {
+  box-shadow: 0 10px 30px rgba(15, 39, 76, 0.06);
+}
+
+/* subtle hover animation helper */
+.transition-smooth {
+  transition: all 220ms cubic-bezier(.22,.9,.32,1);
+}
