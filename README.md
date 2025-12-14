@@ -20,12 +20,6 @@ A **database-driven Flight Booking System** built using **FastAPI, React, and My
 
 Place all screenshots inside a folder named `screenshots/` in the project root.
 
-screenshots/
-├── home.png
-├── flight-search.png
-├── booking-history.png
-└── ticket-pdf.png
-
 ### 🏠 Home Page
 ![Home Page](screenshots/home.png)
 
@@ -168,17 +162,17 @@ Tickets can be **downloaded again** from the Booking History page.
 git clone https://github.com/<your-username>/flight-booking-system.git
 cd flight-booking-system
 
-2️⃣ Backend Setup
+### 2️⃣ Backend Setup
 
 cd backend
 python -m venv venv
 venv\Scripts\activate    # Windows
 
-Install dependencies:
+# Install dependencies:
 
 pip install -r requirements.txt
 
-Create .env file using .env.example:
+# Create .env file using .env.example:
 
 DB_USER=root
 DB_PASSWORD=your_mysql_password
@@ -186,25 +180,25 @@ DB_HOST=localhost
 DB_PORT=3306
 DB_NAME=flight_booking_db
 
-Run backend server:
+# Run backend server:
 
 uvicorn app.main:app --reload --port 8000
 
-Backend runs at:
+# Backend runs at:
 
 http://127.0.0.1:8000
 
-3️⃣ Frontend Setup
+### 3️⃣ Frontend Setup
 
 cd frontend
 npm install
 npm run dev
 
-Frontend runs at:
+# Frontend runs at:
 
 http://localhost:5173
 
-📄 API Endpoints (Sample)
+### 📄 API Endpoints (Sample)
 Method	Endpoint
 GET	/flights
 POST	/bookings
@@ -213,6 +207,6 @@ GET	/bookings/ticket/{pnr}
 POST	/users/login
 POST	/users/register
 
-👤 Author
-Prathamesh Sangole
-CSE (Artificial Intelligence)
+### 👤 Author
+# Prathamesh Sangole
+# CSE (Artificial Intelligence)
